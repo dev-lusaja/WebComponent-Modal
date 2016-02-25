@@ -1,1 +1,36 @@
-modal.css
+.overload{
+    position: fixed; left: 0;top: 0;text-align: center; display: none;
+    background-color: rgba(0,0,0,0.8);z-index: 9999; height: 100%;
+    overflow-x:hidden;width: 100%;
+    padding: 30px 0;
+}
+.helper{
+    display: inline-block; height: 100%;width: 0; vertical-align:  middle;
+}
+.popup{
+    display: inline-block;max-width: 80%; vertical-align:  middle;text-align: left;
+    background-color: #fff; padding: 50px !important;
+    position: relative;
+}
+.btn_close{
+    display: block;width: 35px;height: 35px; background-color: #E31D28;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 35px;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    text-align: center;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+.btn_close:hover{
+    text-decoration: none;
+    background-color: #000;
+}

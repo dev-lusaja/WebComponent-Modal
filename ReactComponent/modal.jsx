@@ -1,10 +1,10 @@
 var Popup = React.createClass({
+	settings:{
+		parent : 'popup'
+	},
 	propTypes:{
 		meth : React.PropTypes.string,
 		act : React.PropTypes.string
-	},
-	config:{
-		parent : 'popup'
 	},
 	render: function() {
 		var meth = this.props.meth
