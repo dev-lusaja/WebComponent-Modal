@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Modal</title>
+</head>
+<body>
+	
+	<link rel="stylesheet" href="css/modal.css">
+	
+	<h1>MODAL</h1>
+
+	<a href="javascript:void(0);" class="open_modal open-modal-js" data-parent="modal1">
+		ABRIR MODAL
+	</a><br>
+	<a href="javascript:void(0);" class="open_modal open-modal-js" data-parent="modal2">	
+		ABRIR MODAL 2
+	</a>
+	<div id="modal1"></div>
+	<div id="modal2"></div>
+
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="js/script.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			$('.open-modal-js').ComponentModal({
+				content: '<p>Soy contenido HTML!!!.</p>'
+			});
+		});
+	</script>
+</body>
+</html>
